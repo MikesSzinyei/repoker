@@ -16,6 +16,10 @@ import java.util.Random;
 import views.MainWindow;
 
 public class MainController {
+    MainWindow mainWindow;
+    String[]   cards = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "B", "D", "K", "A"};
+    Round      round = Round.PREFLOP;
+
     String flop1Str;
     String flop2Str;
     String flop3Str;
@@ -103,8 +107,5 @@ public class MainController {
         this.mainWindow = mainWindow;
         this.initEvent();
     }
-    MainWindow mainWindow;
-    String[]   cards = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "B", "D", "K", "A"};
-    Round      round = Round.PREFLOP;    
-
+        
 }
